@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>True Now</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif, Verdana, Helvetica;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .h {
+            font-size: 2em;
+            margin: 0;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s, font-size 0.3s;
+        }
+        nav ul li a:hover {
+            color: #bebebe;
+            font-size: 1.2em;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            gap: 20px;
+            padding: 0 20px;
+            flex: 1;
+        }
+
+        main.news-list {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .news-item {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            border: 1px solid #ddd;
+            transition: box-shadow 0.3s ease;
+        }
+        .news-item:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+        .news-item strong {
+            display: block;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .news-item p {
+            font-size: 0.95em;
+            line-height: 1.4;
+            color: #555;
+        }
+
+        aside.sidebar {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            border: 1px solid #ddd;
+            height: fit-content;
+        }
+        aside.sidebar h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+            color: #2c3e50;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .trending-item {
+            margin-bottom: 15px;
+        }
+        .trending-item strong {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .trending-item p {
+            margin: 5px 0 0 0;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px 10px;
+            font-size: 0.9em;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="h">True Now</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">World</a></li>
+            <li><a href="#">Politics</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Science</a></li>
+            <li><a href="#">Health</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <main class="news-list">
+            <article class="news-item">
+                <strong>The Rise of Clean Energy in 2025</strong>
+                <p>Clean energy is reshaping the future as nations invest in solar, wind, and green technologies to reduce dependence on fossil fuels.</p>
+            </article>
+            <article class="news-item">
+                <strong>AI Innovations Reshaping Everyday Life</strong>
+                <p>From healthcare to education, Artificial Intelligence is making daily life smarter and more efficient, raising both excitement and ethical debates.</p>
+            </article>
+            <article class="news-item">
+                <strong>Exploring the Future of Space Travel</strong>
+                <p>Private companies and space agencies plan bold missions, making space exploration closer to everyday reality than ever before.</p>
+            </article>
+            <article class="news-item">
+                <strong>Global Sports Highlights of 2025</strong>
+                <p>This year has seen record-breaking performances and surprising victories that have thrilled fans around the world.</p>
+            </article>
+            <article class="news-item">
+                <strong>Breakthroughs in Medical Science</strong>
+                <p>Research into gene therapy and personalized medicine is revolutionizing how diseases are treated worldwide.</p>
+            </article>
+            <article class="news-item">
+                <strong>Climate Change: Steps Towards a Better Future</strong>
+                <p>Governments and organizations are working on initiatives to slow down climate change and encourage sustainable living.</p>
+            </article>
+            <article class="news-item">
+                <strong>Innovations in Education Technology</strong>
+                <p>Virtual classrooms, AI tutors, and interactive tools are transforming how students learn in 2025.</p>
+            </article>
+            <article class="news-item">
+                <strong>Economic Trends to Watch in 2025</strong>
+                <p>Emerging markets, green energy investments, and digital economies are shaping global growth patterns.</p>
+            </article>
+        </main>
+
+        <aside class="sidebar">
+            <h2>Trending News</h2>
+            <div class="trending-item">
+                <strong>Global Green Energy Summit</strong>
+                <p>World leaders meet to accelerate clean energy investments.</p>
+            </div>
+            <div class="trending-item">
+                <strong>Breakthrough in Cancer Research</strong>
+                <p>New treatment shows promising results in early trials.</p>
+            </div>
+            <div class="trending-item">
+                <strong>AI Tools for Daily Life</strong>
+                <p>Technology companies release innovative AI assistants for productivity.</p>
+            </div>
+            <div class="trending-item">
+                <strong>Education for All</strong>
+                <p>Global programs aim to bring digital learning to remote communities.</p>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        &copy; 2025 True Now. All rights reserved.
+    </footer>
+
+</body>
+</html>
