@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Podcast Audio Player with Transcript</title>
+</head>
+<body>
+
+  <h2>Podcast: Learning HTML for Beginners</h2>
+
+  <!-- Audio Player -->
+  <audio controls autoplay muted loop preload="metadata">
+    <!-- Multiple audio formats for compatibility -->
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.ogg" type="audio/ogg">
+
+    <!-- Fallback message -->
+    Your browser does not support the audio element. Please download the podcast to listen.
+  </audio>
+
+  <!-- Transcript Section -->
+  <section>
+    <h3>Transcript</h3>
+    <p>
+      Welcome to the HTML for Beginners podcast. In today’s episode, we will cover the basics 
+      of HTML, starting from structure, tags, and how to create a simple webpage. 
+      By the end of this session, you will be able to write your first HTML page.
+    </p>
+  </section>
+
+</body>
+</html>
