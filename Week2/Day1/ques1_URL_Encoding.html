@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URL Encoding Visualization</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      padding: 20px;
+    }
+    h2 {
+      color: #333;
+    }
+    .url-box {
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    code {
+      font-family: Consolas, monospace;
+      color: #007BFF;
+      font-size: 1.1rem;
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+<body>
+  <h2>URL Encoding Visualization</h2>
+
+  <div class="url-box">
+    <h3>Before Encoding:</h3>
+    <p><code>https://example.com/search?query=hello world & category=science</code></p>
+  </div>
+
+  <div class="url-box">
+    <h3>After Encoding:</h3>
+    <p><code>https://example.com/search?query=hello%20world%20%26%20category%3Dscience</code></p>
+  </div>
+</body>
+</html>
