@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Float Example - Two Columns</title>
+  <style>
+    .left {
+      float: left;
+      width: 50%;
+      background: lightblue;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .right {
+      float: right;
+      width: 50%;
+      background: lightgreen;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .container::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+ 
+  <div class="container">
+    <div class="left">Left Column</div>
+    <div class="right">Right Column</div>
+  </div>
+</body>
+</html>
